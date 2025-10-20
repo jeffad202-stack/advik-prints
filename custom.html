@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adviks Prints - Custom Print Request</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ADVIKS PRINTS</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="custom.html" class="active">Custom Prints</a></li>
+                    <li><a href="contact-product.html">Contact Us</a></li>
+                    <li><a href="index.html#about" class="cta-nav">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="quote" class="container quote-section">
+            <h1>Start Your Custom 3D Print Project</h1>
+            <p>Describe your unique design idea and requirements below. We'll review your needs and contact you to discuss file creation and provide a quote.</p>
+
+            <form id="quoteForm" action="https://formspree.io/f/mvgwyekk" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="details">Project Description (What is it, size estimate, desired material/color):</label>
+                    <textarea id="details" name="Description" rows="6" required placeholder="Example: A small custom phone stand, approx 10cm tall, in blue PETG."></textarea>
+                </div>
+                <button type="submit" class="cta-button submit-button">Request Quote & Review</button>
+            </form>
+            <p id="form-message-custom" class="hidden">✅ Success! Your custom request has been received. We will contact you shortly.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Adviks Prints. | Email: info@adviksprints.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

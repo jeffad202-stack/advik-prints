@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact to Buy - Adviks Prints</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ADVIKS PRINTS</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="custom.html">Custom Prints</a></li>
+                    <li><a href="contact-product.html" class="active">Contact Us</a></li>
+                    <li><a href="index.html#about" class="cta-nav">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-product" class="container quote-section">
+            <h1>Inquire About Your Purchase</h1>
+            <p>Tell us a little about your interest in the item **(<span id="product-name-display">Product Name</span>)**. We'll contact you shortly to confirm your order and discuss shipping.</p>
+
+            <form id="productContactForm" action="https://formspree.io/f/mnngrepb" method="POST">
+                
+                <input type="hidden" id="product-name-input" name="Product_Name" value="">
+
+                <div class="form-group">
+                    <label for="name">Your Full Name:</label>
+                    <input type="text" id="name" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional, for quicker contact):</label>
+                    <input type="tel" id="phone" name="Phone_Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message / Specific Request (e.g., color, quantity):</label>
+                    <textarea id="message" name="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button submit-button">Send Purchase Inquiry</button>
+            </form>
+            <p id="form-message-product" class="hidden">✅ Success! Your inquiry has been received. We will contact you within one business day.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Adviks Prints. | Email: info@adviksprints.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
